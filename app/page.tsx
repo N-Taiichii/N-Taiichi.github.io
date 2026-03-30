@@ -13,9 +13,9 @@ export default function Home() {
   const [view, setView] = useState<View>("home");
 
   return (
-    <div className="center-flex flex-col w-full scroll-smooth overflow-x-hidden overflow-x-hidden">
+    <div className="center-flex flex-col w-full scroll-smooth overflow-x-hidden">
       <div className="flex flex-col w-full justify-start">
-        <NavBar setView={setView} />
+        <NavBar view={view} setView={setView} />
         <Hero view={view} />
       </div>
     </div>
