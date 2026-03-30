@@ -1,7 +1,18 @@
+import { AnimatePresence, motion } from "framer-motion";
+
 import ThemeToggle from "../layout/ThemeToggle";
 import Text from "../ui/Text";
+import HomeSection from "./HomeSection";
+import AboutSection from "./AboutSection";
+import ProjectsSection from "./ProjectsSection";
+import ContactSection from "./ContactSection";
 
-export default function Hero() {
+
+type Props = {
+  view: "home" | "about" | "projects" | "contact";
+};
+
+export default function Hero({ view }: Props) {
   return (
     <div className="w-full scroll-smooth overflow-x-hidden">
       <ThemeToggle />
@@ -17,21 +28,21 @@ export default function Hero() {
               </Text>
             </div>
           </header>
-          <div className="flex flex-col justify-end items-end w-full fixed bottom-5 right-5">
-            <div className="flex justify-end items-end w-full">
-              <div className="w-40 text-right m-8 lg:m-10">
-                <Text
-                  as="p"
-                  className="text-brand-dark dark:text-brand-light font-thin"
-                >
-                  I see web design as a form of art, and am looking to
-                  join a team that shares that perspective. I’m driven to
-                  contribute to thoughtful, fulfilling work where I can add
-                  value with my expertise while continuing to learn from others
-                  and grow into a more well-rounded developer.
-                </Text>
-              </div>
-            </div>
+          <div className="flex justify-center items-center w-full">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={view}
+                initial={{ opacity: 0}}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                {view === "home" && <HomeSection />}
+                {view === "about" && <AboutSection />}
+                {view === "projects" && <ProjectsSection />}
+                {view === "contact" && <ContactSection />}
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
       </div>
