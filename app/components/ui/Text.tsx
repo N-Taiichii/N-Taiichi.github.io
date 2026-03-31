@@ -12,7 +12,7 @@ type TextProps = {
 type VariantTag = keyof React.JSX.IntrinsicElements;
 
 const variantMap: Partial<Record<VariantTag, string>> = {
-  p: "text-[12px] lg:text-[16px] leading-[100%] tracking-tight font-regular",
+  p: "text-[14px] leading-[100%] tracking-tight font-regular",
   span: "text-[12px] leading-[150%] tracking-normal font-thin",
   h6: "text-lg leading-[140%] tracking-[0.25%]",
   h5: "text-xl leading-[135%] tracking-[0.5%]",

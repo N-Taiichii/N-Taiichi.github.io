@@ -3,9 +3,9 @@ import Text from "../ui/Text";
 export default function AboutSection() {
   return (
     <div className="flex justify-end items-end m-2 lg:m-5">
-      <div className="flex flex-col items-center justify-center w-[80%] lg:w-[80%] space-y-5">
+      <div className="flex flex-col items-center justify-center w-[80%] lg:w-[50%] space-y-5">
         {/* Professional Details */}
-        <div className="flex flex-col space-y-2 text-left mt-30">
+        <div className="flex flex-col space-y-2 text-left mt-30 w-full">
           <Text as="h2" className="text-brand-accent">
             Professional/Academic Background
           </Text>
@@ -25,7 +25,7 @@ export default function AboutSection() {
           </Text>
         </div>
         {/* Personal Details */}
-        <div className="flex flex-col space-y-2 text-right">
+        <div className="flex flex-col space-y-2 text-right w-full">
           <Text as="h2" className="text-brand-accent">
             Personal Background
           </Text>
@@ -42,6 +42,34 @@ export default function AboutSection() {
             not doing any of the above, I'm probably off trying to find another
             hobby.
           </Text>
+        </div>
+        {/* Skills */}
+        <div className="flex flex-col space-y-2 text-left w-full">
+          <Text as="h2" className="text-brand-accent">
+            Skills
+          </Text>
+          <ol>
+            <li>
+              <Text as="p">
+                PHP | jQuery | React | Typescript | CSS | Tailwind
+                | MySQL | WordPress
+              </Text>
+            </li>
+          </ol>
+        </div>
+        {/* Awards */}
+        <div className="flex flex-col space-y-2 text-right w-full">
+          <Text as="h2" className="text-brand-accent">
+            Awards
+          </Text>
+          <ol>
+            <li>
+              <Text as="p"><span className="font-bold">5x Deam's List Recipient</span> at University of Jamestown</Text>
+            </li>
+            <li>
+              <Text as="p"><span className="font-bold">Baseball Scholarship</span> to University of Jamestown</Text>
+            </li>
+          </ol>
         </div>
       </div>
     </div>
