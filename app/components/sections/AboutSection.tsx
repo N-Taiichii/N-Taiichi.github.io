@@ -3,9 +3,9 @@ import Text from "../ui/Text";
 export default function AboutSection() {
   return (
     <div className="flex justify-end items-end m-2 lg:m-5">
-      <div className="flex flex-col items-center justify-center w-[80%] lg:w-[50%] space-y-5">
+      <div className="flex flex-col items-center justify-center w-[80%] lg:w-[50%] space-y-5 text-right">
         {/* Professional Details */}
-        <div className="flex flex-col space-y-2 text-left mt-30 w-full">
+        <div className="flex flex-col space-y-2 mt-30 w-full">
           <Text as="h2" className="text-brand-accent">
             Professional/Academic Background
           </Text>
@@ -25,15 +25,14 @@ export default function AboutSection() {
           </Text>
         </div>
         {/* Personal Details */}
-        <div className="flex flex-col space-y-2 text-left w-full">
+        <div className="flex flex-col space-y-2 w-full">
           <Text as="h2" className="text-brand-accent">
             Personal Background
           </Text>
           <Text as="p">
             I currently live in Calgary, Alberta with my partner, Katherine, and
             our puppy, Rhubarb. Outside of work, I spend my time playing
-            volleyball, bouldering, or "enjoying" games like Counter-Strike and
-            Overwatch.
+            volleyball, bouldering, or playing video games.
           </Text>
           <Text as="p">
             I have been learning how to play tennis, guitar, piano, and disc
@@ -44,7 +43,7 @@ export default function AboutSection() {
           </Text>
         </div>
         {/* Skills */}
-        <div className="flex flex-col space-y-2 text-left w-full">
+        <div className="flex flex-col space-y-2 w-full">
           <Text as="h2" className="text-brand-accent">
             Skills
           </Text>
@@ -58,7 +57,7 @@ export default function AboutSection() {
           </ol>
         </div>
         {/* Awards */}
-        <div className="flex flex-col space-y-2 text-left w-full">
+        <div className="flex flex-col space-y-2 w-full">
           <Text as="h2" className="text-brand-accent">
             Awards
           </Text>

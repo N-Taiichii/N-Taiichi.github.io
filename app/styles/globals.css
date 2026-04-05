@@ -30,7 +30,7 @@ p {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-brand-main: #F84525;
-  --color-brand-dark: #0D1F22;
+  --color-brand-dark: #010202;
   --color-brand-light: #FFFDED;
   --color-brand-accent: #FF5714;
 }
@@ -51,7 +51,7 @@ p {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0D1F22;
+    --background: #010202;
     --foreground: #FFFDED;
   }
 }

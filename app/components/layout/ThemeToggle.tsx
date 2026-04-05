@@ -39,11 +39,11 @@ export default function ThemeToggle() {
     const root = document.documentElement; // or document.body
     root.classList.toggle("dark", theme === "dark");
     if (theme === "dark") {
-      root.style.setProperty("--background", "#0D1F22");
+      root.style.setProperty("--background", "#010202");
       root.style.setProperty("--foreground", "#FFFDED");
     } else {
       root.style.setProperty("--background", "#FFFDED");
-      root.style.setProperty("--foreground", "#0D1F22");
+      root.style.setProperty("--foreground", "#010202");
     }
   }, [theme]);
   return (
