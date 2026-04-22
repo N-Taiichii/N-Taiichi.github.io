@@ -9,7 +9,7 @@ export default function HomeSection() {
             as="p"
             className="text-brand-dark dark:text-brand-light font-thin"
           >
-            Web design is art, and in search to work with others that feel the same.
+            Web design is art. In search of others that feel the same.
           </Text>
         </div>
       </div>
